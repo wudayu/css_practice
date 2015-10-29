@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+.menu {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    flex: 1 1 100%;
+}
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+.menu li:nth-child(1) {
+    background-color: coral;
+}
+.menu li:nth-child(2) {
+    background-color: blanchedalmond;
+}
+.menu li:nth-child(3) {
+    background-color: cadetblue;
+}
+.menu li:nth-child(4) {
+    background-color: cornflowerblue;
+}
+.menu li:nth-child(5) {
+    background-color: chartreuse;
+}
+.menu li:nth-child(6) {
+    background-color: chocolate;
+}
+@media (min-width: 480px) {
+    .menu li {
+        flex: 1 1 50%
+    }
+}
+@media (min-width: 768px) {
+    .menu {
+        flex-flow: row nowrap;
+    }
+}
